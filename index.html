@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>霓虹小队 · 原创表演型音乐游戏</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="entry" class="entry-screen">
+        <h1>霓虹小队</h1>
+        <p>拖拽声音道具，组建你的原创角色演出。</p>
+        <button id="startBtn" class="primary-btn">开始表演</button>
+      </section>
+
+      <section id="stageView" class="stage-view hidden" aria-live="polite">
+        <header class="top-bar">
+          <h2>夜色主舞台</h2>
+          <div class="top-actions">
+            <button id="resetBtn" class="ghost-btn">重新来一遍</button>
+            <button id="saveBtn" class="ghost-btn">保存这段混搭</button>
+          </div>
+        </header>
+
+        <div id="bonusBanner" class="bonus-banner">拖到角色身上</div>
+
+        <section id="stage" class="stage" aria-label="角色舞台"></section>
+
+        <section class="tool-panel" aria-label="声音道具栏">
+          <div class="tool-panel-title">选择声音包</div>
+          <div id="toolRack" class="tool-rack"></div>
+        </section>
+      </section>
+    </main>
+
+    <template id="performerTemplate">
+      <article class="performer" data-empty="true">
+        <div class="spotlight"></div>
+        <div class="avatar">
+          <div class="head"></div>
+          <div class="body"></div>
+        </div>
+        <div class="performer-name"></div>
+        <div class="performer-gear">待机</div>
+        <button class="remove-chip" type="button">卸下</button>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
