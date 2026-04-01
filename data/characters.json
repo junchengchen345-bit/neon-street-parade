@@ -1,0 +1,249 @@
+{
+  "packId": "night_street_v1",
+  "packNameCn": "夜光街游",
+  "theme": "夜色霓虹街头表演团",
+  "ui": {
+    "bg": "#0B1020",
+    "accentPurple": "#7C5CFF",
+    "accentTeal": "#00D7C0",
+    "accentOrange": "#FFB84D",
+    "textLight": "#F7F8FC",
+    "baseBody": "#D8DCE5",
+    "baseShadow": "#AEB5C2"
+  },
+  "stageOrder": ["agu", "line", "bubo", "fold", "humm", "sprk", "dohm"],
+  "categories": [
+    { "id": "beat", "nameCn": "鼓点" },
+    { "id": "bass", "nameCn": "贝斯" },
+    { "id": "melody", "nameCn": "旋律" },
+    { "id": "ambient", "nameCn": "氛围" },
+    { "id": "vocal", "nameCn": "人声" }
+  ],
+  "characters": [
+    {
+      "id": "agu",
+      "nameCn": "阿鼓",
+      "nameEn": "Agu",
+      "role": "beat_foundation",
+      "silhouette": "short_round_wide_shoulders",
+      "bodyType": "short_heavy",
+      "headRatio": 2.8,
+      "scale": 0.94,
+      "personality": ["稳", "憨", "节拍感强"],
+      "visualKeywords": ["圆头", "宽肩", "短腿", "毛线帽轮廓", "重心低"],
+      "audioAffinity": ["beat", "clap", "stomp"],
+      "preferredCategories": ["beat"],
+      "idleAnimations": ["head_bob_slow", "foot_tap_alt", "shoulder_breath_small"],
+      "activateAnimations": ["outline_flash", "small_pop", "stomp_down"],
+      "loopAnimations": ["chest_hit_alt", "shoulder_pulse", "foot_stomp"],
+      "equipSlots": ["head", "hands", "chest", "feet"],
+      "basePalette": {
+        "body": "#D8DCE5",
+        "shadow": "#AEB5C2",
+        "accent": "#FFB84D"
+      },
+      "defaultState": {
+        "mood": "待机",
+        "desaturation": 0.9
+      },
+      "activatedState": {
+        "mood": "节拍上身",
+        "glowColor": "#FFB84D"
+      }
+    },
+    {
+      "id": "line",
+      "nameCn": "线条",
+      "nameEn": "Line",
+      "role": "bass_frame",
+      "silhouette": "tall_thin_long_neck",
+      "bodyType": "tall_thin",
+      "headRatio": 3.2,
+      "scale": 1.06,
+      "personality": ["冷静", "精准", "机械感"],
+      "visualKeywords": ["细高", "长脖子", "四肢修长", "竖向感强"],
+      "audioAffinity": ["bass", "low_pulse"],
+      "preferredCategories": ["bass"],
+      "idleAnimations": ["body_sway_lr_small", "finger_twitch", "head_nod_micro"],
+      "activateAnimations": ["vertical_glow_scan", "chest_strip_on"],
+      "loopAnimations": ["torso_sway_fb", "pluck_arm_motion", "knee_bounce_soft"],
+      "equipSlots": ["ears", "chest", "waist"],
+      "basePalette": {
+        "body": "#DCE1E9",
+        "shadow": "#A4ACBA",
+        "accent": "#00D7C0"
+      },
+      "defaultState": {
+        "mood": "待机",
+        "desaturation": 0.92
+      },
+      "activatedState": {
+        "mood": "低频上身",
+        "glowColor": "#00D7C0"
+      }
+    },
+    {
+      "id": "bubo",
+      "nameCn": "泡泡",
+      "nameEn": "Bubo",
+      "role": "ambient_cloud",
+      "silhouette": "big_head_soft_round_body",
+      "bodyType": "soft_round",
+      "headRatio": 2.9,
+      "scale": 0.98,
+      "personality": ["梦幻", "轻柔", "慢半拍"],
+      "visualKeywords": ["头大身小", "圆润", "软边轮廓", "漂浮感"],
+      "audioAffinity": ["ambient", "pad", "soft_harmony"],
+      "preferredCategories": ["ambient"],
+      "idleAnimations": ["float_up_down", "blink_slow", "breathe_soft"],
+      "activateAnimations": ["mist_burst_small", "aura_ring_expand"],
+      "loopAnimations": ["breathe_expand_contract", "particle_drift", "arm_wave_soft"],
+      "equipSlots": ["head", "back", "aura"],
+      "basePalette": {
+        "body": "#E4E7EF",
+        "shadow": "#BEC6D5",
+        "accent": "#7C5CFF"
+      },
+      "defaultState": {
+        "mood": "待机",
+        "desaturation": 0.9
+      },
+      "activatedState": {
+        "mood": "氛围上身",
+        "glowColor": "#7C5CFF"
+      }
+    },
+    {
+      "id": "fold",
+      "nameCn": "折纸",
+      "nameEn": "Fold",
+      "role": "fx_glitch",
+      "silhouette": "angular_folded_shape",
+      "bodyType": "angular_light",
+      "headRatio": 3.0,
+      "scale": 1.0,
+      "personality": ["古怪", "跳脱", "神经质"],
+      "visualKeywords": ["折角脸", "棱角轮廓", "片状身体", "glitch感"],
+      "audioAffinity": ["fx", "glitch", "click"],
+      "preferredCategories": ["beat", "ambient"],
+      "idleAnimations": ["head_snap_small", "hold_frame_short", "twitch_once"],
+      "activateAnimations": ["glitch_flash", "split_rejoin"],
+      "loopAnimations": ["jerk_step", "frame_skip_pose", "side_snap"],
+      "equipSlots": ["face", "shoulders", "outline"],
+      "basePalette": {
+        "body": "#D3D7E0",
+        "shadow": "#9098A7",
+        "accent": "#7C5CFF"
+      },
+      "defaultState": {
+        "mood": "待机",
+        "desaturation": 0.93
+      },
+      "activatedState": {
+        "mood": "效果上身",
+        "glowColor": "#7C5CFF"
+      }
+    },
+    {
+      "id": "humm",
+      "nameCn": "哼哼",
+      "nameEn": "Humm",
+      "role": "lead_melody",
+      "silhouette": "mid_soft_scarf_shape",
+      "bodyType": "mid_soft",
+      "headRatio": 3.0,
+      "scale": 1.0,
+      "personality": ["温柔", "会带戏", "主唱感"],
+      "visualKeywords": ["围巾轮廓", "中等身材", "肩颈柔和", "唱句感强"],
+      "audioAffinity": ["melody", "lead_vocal", "hook"],
+      "preferredCategories": ["melody", "vocal"],
+      "idleAnimations": ["shoulder_sway", "hand_face_touch", "head_tilt_soft"],
+      "activateAnimations": ["mouth_glow_on", "scarf_trail_appear"],
+      "loopAnimations": ["sing_pose_alt", "arm_arc_soft", "torso_sway_graceful"],
+      "equipSlots": ["neck", "mouth", "shoulders", "hands"],
+      "basePalette": {
+        "body": "#E6E9F0",
+        "shadow": "#B5BAC8",
+        "accent": "#F7F8FC"
+      },
+      "defaultState": {
+        "mood": "待机",
+        "desaturation": 0.88
+      },
+      "activatedState": {
+        "mood": "旋律上身",
+        "glowColor": "#F7F8FC"
+      }
+    },
+    {
+      "id": "sprk",
+      "nameCn": "小闪",
+      "nameEn": "Sprk",
+      "role": "top_rhythm_helper",
+      "silhouette": "small_sharp_top_fast_body",
+      "bodyType": "small_fast",
+      "headRatio": 2.8,
+      "scale": 0.9,
+      "personality": ["淘气", "灵活", "爱抢镜"],
+      "visualKeywords": ["小只", "尖角发束", "短腿", "轻快闪动"],
+      "audioAffinity": ["top_rhythm", "click", "shaker", "bright_fx"],
+      "preferredCategories": ["beat", "ambient", "vocal"],
+      "idleAnimations": ["bounce_small", "eye_glance_side", "quick_blink"],
+      "activateAnimations": ["spark_pop", "wrist_flash"],
+      "loopAnimations": ["quick_head_nod", "side_step_fast", "blink_flash"],
+      "equipSlots": ["head", "wrists", "feet", "trail"],
+      "basePalette": {
+        "body": "#DDE2EA",
+        "shadow": "#AAB2C1",
+        "accent": "#FFB84D"
+      },
+      "defaultState": {
+        "mood": "待机",
+        "desaturation": 0.9
+      },
+      "activatedState": {
+        "mood": "高频上身",
+        "glowColor": "#FFB84D"
+      }
+    },
+    {
+      "id": "dohm",
+      "nameCn": "面团",
+      "nameEn": "Dohm",
+      "role": "choir_weight",
+      "silhouette": "broad_jacket_heavy",
+      "bodyType": "broad_heavy",
+      "headRatio": 3.1,
+      "scale": 1.08,
+      "personality": ["酷", "慢热", "压场"],
+      "visualKeywords": ["宽肩", "大外套", "头略低", "体积最大"],
+      "audioAffinity": ["choir", "thick_vocal", "support_low"],
+      "preferredCategories": ["bass", "vocal", "ambient"],
+      "idleAnimations": ["weight_shift_slow", "shoulder_breath", "slow_head_raise"],
+      "activateAnimations": ["chest_pulse_on", "collar_glow"],
+      "loopAnimations": ["head_raise", "chest_expand", "shoulder_drop_on_beat"],
+      "equipSlots": ["collar", "chest", "face", "shoulders"],
+      "basePalette": {
+        "body": "#D1D6DF",
+        "shadow": "#8F97A6",
+        "accent": "#00D7C0"
+      },
+      "defaultState": {
+        "mood": "待机",
+        "desaturation": 0.94
+      },
+      "activatedState": {
+        "mood": "厚声上身",
+        "glowColor": "#00D7C0"
+      }
+    }
+  ],
+  "uiCopyCn": {
+    "start": "开始表演",
+    "reset": "重新来一遍",
+    "save": "保存这段混搭",
+    "dragHint": "拖到角色身上",
+    "comboDone": "组合完成",
+    "fullCast": "满编演出"
+  }
+}
