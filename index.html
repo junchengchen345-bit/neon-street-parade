@@ -9,14 +9,14 @@
   <body>
     <main class="app">
       <section id="entry" class="entry-screen">
-        <h1>霓虹小队</h1>
-        <p>拖拽声音道具，组建你的原创角色演出。</p>
+        <h1 id="appTitle">霓虹小队</h1>
+        <p id="entryDesc">拖拽声音道具，组建你的原创角色演出。</p>
         <button id="startBtn" class="primary-btn">开始表演</button>
       </section>
 
       <section id="stageView" class="stage-view hidden" aria-live="polite">
         <header class="top-bar">
-          <h2>夜色主舞台</h2>
+          <h2 id="stageTitle">夜色主舞台</h2>
           <div class="top-actions">
             <button id="resetBtn" class="ghost-btn">重新来一遍</button>
             <button id="saveBtn" class="ghost-btn">保存这段混搭</button>
@@ -28,7 +28,7 @@
         <section id="stage" class="stage" aria-label="角色舞台"></section>
 
         <section class="tool-panel" aria-label="声音道具栏">
-          <div class="tool-panel-title">选择声音包</div>
+          <div id="toolPanelTitle" class="tool-panel-title">选择声音包</div>
           <div id="toolRack" class="tool-rack"></div>
         </section>
       </section>
@@ -39,7 +39,15 @@
         <div class="spotlight"></div>
         <div class="avatar">
           <div class="head"></div>
-          <div class="body"></div>
+          <div class="torso-wrap">
+            <div class="arm arm-left"></div>
+            <div class="body"></div>
+            <div class="arm arm-right"></div>
+          </div>
+          <div class="legs">
+            <div class="leg leg-left"></div>
+            <div class="leg leg-right"></div>
+          </div>
         </div>
         <div class="performer-name"></div>
         <div class="performer-gear">待机</div>
