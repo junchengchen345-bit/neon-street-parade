@@ -1,0 +1,407 @@
+{
+  "packId": "night_street_v1",
+  "packNameCn": "夜光街游",
+  "bpm": 96,
+  "keyCenter": "A minor",
+  "loopBars": 4,
+  "categories": [
+    {
+      "id": "beat",
+      "nameCn": "鼓点",
+      "color": "#FFB84D"
+    },
+    {
+      "id": "bass",
+      "nameCn": "贝斯",
+      "color": "#00D7C0"
+    },
+    {
+      "id": "melody",
+      "nameCn": "旋律",
+      "color": "#F7F8FC"
+    },
+    {
+      "id": "ambient",
+      "nameCn": "氛围",
+      "color": "#7C5CFF"
+    },
+    {
+      "id": "vocal",
+      "nameCn": "人声",
+      "color": "#9EE7FF"
+    }
+  ],
+  "uiCopyCn": {
+    "dragHint": "拖到角色身上",
+    "replaceHint": "拖上去替换",
+    "removeHint": "拖回下方移除",
+    "categoryBeat": "鼓点",
+    "categoryBass": "贝斯",
+    "categoryMelody": "旋律",
+    "categoryAmbient": "氛围",
+    "categoryVocal": "人声"
+  },
+  "items": [
+    {
+      "id": "b1_street_kick",
+      "nameCn": "街口踩拍",
+      "shortLabel": "踩拍",
+      "category": "beat",
+      "color": "#FFB84D",
+      "energy": 3,
+      "rarity": "core",
+      "iconStyle": ["脚踏器", "厚底", "橙色脉冲"],
+      "audio": {
+        "file": "audio/night_street_v1/b1_street_kick.mp3",
+        "gain": 0.95,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["agu", "dohm"],
+      "equipVisual": ["feet_pedal", "chest_pulse_small"],
+      "animationOverride": ["foot_stomp", "body_drop_on_beat"],
+      "mixRole": "foundation_kick"
+    },
+    {
+      "id": "b2_hand_clap",
+      "nameCn": "手套拍点",
+      "shortLabel": "拍点",
+      "category": "beat",
+      "color": "#FFB84D",
+      "energy": 2,
+      "rarity": "core",
+      "iconStyle": ["发光手套", "拍手节拍", "暖橙亮边"],
+      "audio": {
+        "file": "audio/night_street_v1/b2_hand_clap.mp3",
+        "gain": 0.88,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["agu", "sprk"],
+      "equipVisual": ["hand_gloves", "wrist_glow"],
+      "animationOverride": ["chest_hit_alt", "clap_motion"],
+      "mixRole": "snare_clap"
+    },
+    {
+      "id": "b3_run_snare",
+      "nameCn": "小跑军鼓",
+      "shortLabel": "小跑",
+      "category": "beat",
+      "color": "#FFB84D",
+      "energy": 4,
+      "rarity": "accent",
+      "iconStyle": ["手腕节拍环", "细碎线条", "快节奏"],
+      "audio": {
+        "file": "audio/night_street_v1/b3_run_snare.mp3",
+        "gain": 0.82,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["sprk", "agu"],
+      "equipVisual": ["wrist_ring", "speed_trail"],
+      "animationOverride": ["quick_head_nod", "shoulder_pulse_fast"],
+      "mixRole": "snare_drive"
+    },
+    {
+      "id": "b4_rain_tin",
+      "nameCn": "雨棚铁响",
+      "shortLabel": "铁响",
+      "category": "beat",
+      "color": "#FFB84D",
+      "energy": 3,
+      "rarity": "accent",
+      "iconStyle": ["金属耳罩", "铁片反光", "城市敲击"],
+      "audio": {
+        "file": "audio/night_street_v1/b4_rain_tin.mp3",
+        "gain": 0.8,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["fold", "agu"],
+      "equipVisual": ["metal_earcaps", "edge_flash"],
+      "animationOverride": ["side_snap", "elbow_hit"],
+      "mixRole": "metal_perc"
+    },
+    {
+      "id": "s1_neon_pulse",
+      "nameCn": "霓虹低脉",
+      "shortLabel": "低脉",
+      "category": "bass",
+      "color": "#00D7C0",
+      "energy": 3,
+      "rarity": "core",
+      "iconStyle": ["胸前低频灯条", "圆润脉冲", "霓虹青"],
+      "audio": {
+        "file": "audio/night_street_v1/s1_neon_pulse.mp3",
+        "gain": 0.95,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["line", "dohm"],
+      "equipVisual": ["chest_strip", "low_pulse_band"],
+      "animationOverride": ["torso_sway_fb", "knee_bounce_soft"],
+      "mixRole": "main_bass"
+    },
+    {
+      "id": "s2_subway_rumble",
+      "nameCn": "地铁轰鸣",
+      "shortLabel": "轰鸣",
+      "category": "bass",
+      "color": "#00D7C0",
+      "energy": 4,
+      "rarity": "heavy",
+      "iconStyle": ["腰间波纹带", "厚重低频", "暗青压场"],
+      "audio": {
+        "file": "audio/night_street_v1/s2_subway_rumble.mp3",
+        "gain": 1.0,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["dohm", "line"],
+      "equipVisual": ["waist_wave_band", "chest_breath_glow"],
+      "animationOverride": ["weight_shift_slow", "chest_expand"],
+      "mixRole": "heavy_bass"
+    },
+    {
+      "id": "s3_wire_pluck",
+      "nameCn": "电线拨弦",
+      "shortLabel": "拨弦",
+      "category": "bass",
+      "color": "#00D7C0",
+      "energy": 2,
+      "rarity": "groove",
+      "iconStyle": ["机械耳机", "指尖亮线", "拨弦低频"],
+      "audio": {
+        "file": "audio/night_street_v1/s3_wire_pluck.mp3",
+        "gain": 0.86,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["line", "humm"],
+      "equipVisual": ["ear_mech", "finger_line_glow"],
+      "animationOverride": ["pluck_arm_motion", "torso_sway_fb"],
+      "mixRole": "groove_bass"
+    },
+    {
+      "id": "m1_glass_whistle",
+      "nameCn": "玻璃口哨",
+      "shortLabel": "口哨",
+      "category": "melody",
+      "color": "#F7F8FC",
+      "energy": 2,
+      "rarity": "air",
+      "iconStyle": ["细长光环", "玻璃线条", "清亮旋律"],
+      "audio": {
+        "file": "audio/night_street_v1/m1_glass_whistle.mp3",
+        "gain": 0.8,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["humm", "bubo"],
+      "equipVisual": ["head_ring", "mouth_soft_glow"],
+      "animationOverride": ["head_raise_soft", "arm_arc_soft"],
+      "mixRole": "airy_melody"
+    },
+    {
+      "id": "m2_neon_keys",
+      "nameCn": "霓虹电键",
+      "shortLabel": "电键",
+      "category": "melody",
+      "color": "#F7F8FC",
+      "energy": 3,
+      "rarity": "hook",
+      "iconStyle": ["发光音阶围巾", "短句钩子", "白青光"],
+      "audio": {
+        "file": "audio/night_street_v1/m2_neon_keys.mp3",
+        "gain": 0.84,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["humm", "sprk"],
+      "equipVisual": ["neck_scale_scarf", "hand_note_trail"],
+      "animationOverride": ["sing_pose_alt", "hand_phrase_mark"],
+      "mixRole": "main_hook"
+    },
+    {
+      "id": "m3_platform_hum",
+      "nameCn": "月台哼线",
+      "shortLabel": "哼线",
+      "category": "melody",
+      "color": "#F7F8FC",
+      "energy": 2,
+      "rarity": "soft",
+      "iconStyle": ["嘴边柔光", "围巾轻摆", "亲和旋律"],
+      "audio": {
+        "file": "audio/night_street_v1/m3_platform_hum.mp3",
+        "gain": 0.83,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["humm", "bubo"],
+      "equipVisual": ["mouth_glow", "soft_scarf"],
+      "animationOverride": ["torso_sway_graceful", "arm_arc_soft"],
+      "mixRole": "soft_lead"
+    },
+    {
+      "id": "a1_night_fog",
+      "nameCn": "夜雾呼吸",
+      "shortLabel": "夜雾",
+      "category": "ambient",
+      "color": "#7C5CFF",
+      "energy": 1,
+      "rarity": "core",
+      "iconStyle": ["云雾飘带", "柔紫气团", "呼吸灯"],
+      "audio": {
+        "file": "audio/night_street_v1/a1_night_fog.mp3",
+        "gain": 0.72,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["bubo", "dohm"],
+      "equipVisual": ["mist_ribbon", "aura_soft"],
+      "animationOverride": ["breathe_expand_contract", "particle_drift"],
+      "mixRole": "pad_bed"
+    },
+    {
+      "id": "a2_lamp_shimmer",
+      "nameCn": "路灯碎光",
+      "shortLabel": "碎光",
+      "category": "ambient",
+      "color": "#7C5CFF",
+      "energy": 2,
+      "rarity": "spark",
+      "iconStyle": ["星点粒子", "高频碎光", "紫白闪片"],
+      "audio": {
+        "file": "audio/night_street_v1/a2_lamp_shimmer.mp3",
+        "gain": 0.7,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["sprk", "fold", "bubo"],
+      "equipVisual": ["spark_particles", "shoulder_stars"],
+      "animationOverride": ["blink_flash", "particle_drift_fast"],
+      "mixRole": "shimmer_top"
+    },
+    {
+      "id": "v1_night_lead",
+      "nameCn": "嗯夜主句",
+      "shortLabel": "主句",
+      "category": "vocal",
+      "color": "#9EE7FF",
+      "energy": 3,
+      "rarity": "lead",
+      "iconStyle": ["嘴部暖白光", "主唱围巾", "舞台肩线"],
+      "audio": {
+        "file": "audio/night_street_v1/v1_night_lead.mp3",
+        "gain": 0.9,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["humm", "dohm"],
+      "equipVisual": ["mouth_core_glow", "shoulder_stage_line"],
+      "animationOverride": ["sing_pose_alt", "head_raise_soft"],
+      "mixRole": "lead_vocal"
+    },
+    {
+      "id": "v2_ha_light",
+      "nameCn": "哈光和声",
+      "shortLabel": "和声",
+      "category": "vocal",
+      "color": "#9EE7FF",
+      "energy": 2,
+      "rarity": "support",
+      "iconStyle": ["肩线小灯", "轻快短句", "青白呼应"],
+      "audio": {
+        "file": "audio/night_street_v1/v2_ha_light.mp3",
+        "gain": 0.78,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["sprk", "humm"],
+      "equipVisual": ["shoulder_small_lights", "cheek_flash"],
+      "animationOverride": ["side_step_fast", "short_phrase_bounce"],
+      "mixRole": "response_vocal"
+    },
+    {
+      "id": "v3_oo_choir",
+      "nameCn": "哦哦合唱",
+      "shortLabel": "合唱",
+      "category": "vocal",
+      "color": "#9EE7FF",
+      "energy": 2,
+      "rarity": "heavy",
+      "iconStyle": ["胸口宽光面罩", "低吟合唱", "厚声支撑"],
+      "audio": {
+        "file": "audio/night_street_v1/v3_oo_choir.mp3",
+        "gain": 0.88,
+        "loopBars": 4,
+        "quantize": "1bar"
+      },
+      "recommendedCharacters": ["dohm", "bubo"],
+      "equipVisual": ["wide_face_mask", "chest_choir_glow"],
+      "animationOverride": ["chest_expand", "shoulder_drop_on_beat"],
+      "mixRole": "choir_pad"
+    }
+  ],
+  "mixRules": {
+    "maxActiveItems": 7,
+    "recommendedPerCategory": {
+      "beat": { "min": 1, "max": 2 },
+      "bass": { "min": 0, "max": 1 },
+      "melody": { "min": 0, "max": 2 },
+      "ambient": { "min": 0, "max": 2 },
+      "vocal": { "min": 0, "max": 2 }
+    },
+    "quantizeOnDrop": true,
+    "defaultDropBehavior": "replace_existing_on_character"
+  },
+  "combos": [
+    {
+      "id": "combo_team_lights",
+      "nameCn": "整队亮灯",
+      "requiredItemIds": ["b1_street_kick", "s1_neon_pulse", "m2_neon_keys", "v1_night_lead"],
+      "triggerType": "exact_or_superset",
+      "stageEffect": {
+        "type": "team_light_up",
+        "accentColor": "#7C5CFF",
+        "messageCn": "组合完成"
+      }
+    },
+    {
+      "id": "combo_platform_drift",
+      "nameCn": "月台慢游",
+      "requiredItemIds": ["b2_hand_clap", "s3_wire_pluck", "m3_platform_hum", "a1_night_fog", "v2_ha_light"],
+      "triggerType": "exact_or_superset",
+      "stageEffect": {
+        "type": "soft_fog_scene",
+        "accentColor": "#F7F8FC",
+        "messageCn": "慢游开启"
+      }
+    },
+    {
+      "id": "combo_corner_flash",
+      "nameCn": "街角跳闪",
+      "requiredItemIds": ["b3_run_snare", "b4_rain_tin", "a2_lamp_shimmer", "v2_ha_light"],
+      "triggerType": "exact_or_superset",
+      "stageEffect": {
+        "type": "flash_stage_edges",
+        "accentColor": "#FFB84D",
+        "messageCn": "灯光起了"
+      }
+    },
+    {
+      "id": "combo_full_cast",
+      "nameCn": "满编演出",
+      "requiredLogic": {
+        "minActiveCharacters": 5,
+        "requiredCategories": ["beat", "bass", "melody", "vocal"]
+      },
+      "triggerType": "rule_based",
+      "stageEffect": {
+        "type": "full_cast_mode",
+        "accentColor": "#00D7C0",
+        "messageCn": "满编演出"
+      }
+    }
+  ]
+}
